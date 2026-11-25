@@ -1,0 +1,9 @@
+
+
+   18  python3 -m venv venv
+   19  apt install python3.10-venv
+   20  sudo apt install python3.10-venv
+   21  python3 -m venv venv
+   22  source venv/bin/activate
+   23  pip3 install torch
+

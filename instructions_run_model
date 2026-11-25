@@ -1,0 +1,20 @@
+#train the model with a custom data set.
+
+#1. source virtual env
+source .venv/bin/activate
+
+#2. copy data/shakespeare_char into data/taylor
+
+#3. put the data in data/taylor/input.txt and copy 
+
+#4. copy config/train_shakespeare_char.py to config/train_taylor.py
+
+#5. run prepare.py on the dataset
+python data/taylor/prepare.py
+
+#6. train the model with data in taylor/input.txt
+python train.py config/train_taylor.py
+
+#7. test model by running sample from trained data
+python3 sample.py --out_dir=out-taylor --device=cpu --start="haters gonna hate"  --num_samples=2 --max_new_tokens=200
+
