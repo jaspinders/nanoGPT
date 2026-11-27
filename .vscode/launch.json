@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "name": "Python: sample.py (Taylor)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/sample.py",
+            "python": "/home/jas/projects/nanoGPT/.venv/bin/python",
+            "args": [
+                "--out_dir=out-taylor",
+                "--device=cpu",
+                "--start=haters gonna hate",
+                "--num_samples=2",
+                "--max_new_tokens=200"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
